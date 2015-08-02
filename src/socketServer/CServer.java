@@ -1,7 +1,7 @@
 /**
- * Copyright (c) »ªÄÏÅ©Òµ´óÑ§ÐÅÏ¢Ñ§Ôº²Ì³¬Ãô2014°æÈ¨ËùÓÐ
+ * Copyright (c) ï¿½ï¿½ï¿½ï¿½Å©Òµï¿½ï¿½Ñ§ï¿½ï¿½Ï¢Ñ§Ôºï¿½Ì³ï¿½ï¿½ï¿½2014ï¿½ï¿½È¨ï¿½ï¿½ï¿½ï¿½
  * 
- * ÎÄ¼þ´´½¨Ê±¼ä£º2014-7-13
+ * ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ä£º2014-7-13
  */
 package socketServer;
 
@@ -14,7 +14,7 @@ import java.net.Socket;
 import java.util.ArrayList;
 
 /**
- * @author ²Ì³¬Ãô
+ * @author ï¿½Ì³ï¿½ï¿½ï¿½
  * 
  */
 public class CServer {
@@ -28,11 +28,11 @@ public class CServer {
 	public static void main(String[] args) throws IOException {
 		ServerSocket serverSocket = new ServerSocket(30000);
 		System.out.println("serverSocket start!!!");
-		while (true) {
+		while (true) { 
 			Socket s = serverSocket.accept();
-			System.out.println("ÓÐÁ¬½Ó£º" + s.getInetAddress());
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½Ó£ï¿½" + s.getInetAddress());
 			socketList.add(s);
-			System.out.println("Á¬½ÓÊý£º" + socketList.size());
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" + socketList.size());
 			new Thread(new ServerThread(s)).start();
 		}
 	}
