@@ -27,7 +27,7 @@ public class CServer {
 	 */
 	public static void main(String[] args) throws IOException {
 		ServerSocket serverSocket = new ServerSocket(30000);
-		System.out.println("serverSocket start!!!");
+		System.out.println("serverSocket start!!!!");
 		while (true) { 
 			Socket s = serverSocket.accept();
 			System.out.println("�����ӣ�" + s.getInetAddress());
